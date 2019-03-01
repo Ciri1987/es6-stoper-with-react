@@ -6,11 +6,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "babel script.js --watch --out-file script-compiled.js"
   },
-  "author": "",
+  "author": "Anna Strzała",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
     "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-latest": "^6.24.1"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  }
 }
