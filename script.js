@@ -67,17 +67,17 @@ class Stopwatch extends React.Component {
 
     render() {
         return (
-            <div className='container'>
-                <div className='timer text-light'>
-                    <h1>Stopwatch</h1>
+            < div className="container">
+                < div className="timer text-light">
+                    < h1>Stopwatch</h1>
                 </div>
-                <nav className='controls'>
-                    <a href="#" onClick={() => { this.start() }} className='button btn btn-dark' id='start'>Start</a>
-                    <a href="#" onClick={() => { this.stop() }} className='button btn btn-dark' id='stop'>Stop</a>
-                    <a href="#" onClick={() => { this.reset() }} className='button btn btn-danger' id='reset'>Reset</a>
+                < nav className='controls'>
+                    < a href="#" onClick={() => { this.start() }} className="button btn btn-dark" id="start">Start</a>
+                    < a href="#" onClick={() => { this.stop() }} className="button btn btn-dark" id="stop">Stop</a>
+                    < a href="#" onClick={() => { this.reset() }} className="button btn btn-danger" id="reset">Reset</a>
                 </nav>
-                <div className='stopwatch bg-light'>{this.format()}</div>
-                <ul className='results'></ul>
+                < div className="stopwatch bg-light">{this.format()}</div>
+                < ul className="results"></ul>
             </div>
         )
     }
@@ -92,4 +92,3 @@ const pad0 = value => {
 }
 
 ReactDOM.render(<Stopwatch />, document.getElementById('app'));
-
